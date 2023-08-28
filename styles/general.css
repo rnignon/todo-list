@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: var(--text);
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--tertiary);
+}
+
+.icon {
+  width: 24px;
+  opacity: 0.7;
+}
+
+.icon-button:hover {
+  opacity: 1;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+:root {
+  --primary: #708856;
+  --secondary: #cbd9bb;
+  --tertiary: #eef1e2;
+
+  --text: #232623;
+  --button: #dfe4db;
+  --button-hover: #c8cfc3;
+}
+
+::-webkit-scrollbar { display: none; }
+
+
+@media (max-width: 768px) {
+  .icon {
+    width: 30px;
+  }
+}
